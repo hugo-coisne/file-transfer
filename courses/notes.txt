@@ -1,0 +1,31 @@
+{
+    "freezer": {
+        "name": "freezer",
+        "brand": "",
+        "content": {
+            "ice cream": "500 g",
+            "ice cubes": "20",
+            "spinach": "2 kg",
+            "cheese crepes": "1,2 kg",
+            "bread": "300 g"
+        }
+    },
+    "fridge": {
+        "name": "fridge",
+        "brand": "",
+        "content": {
+            "steak": "1 kg",
+            "tomatoes": "100 g"
+        }
+    },
+    "pantry": {
+        "name": "pantry",
+        "content": {
+            "pasta": "2 kg",
+            "crackers": "1 kg"
+        }
+    },
+    "receipes": {},
+    "foods": {}
+}
+

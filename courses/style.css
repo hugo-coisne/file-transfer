@@ -1,0 +1,106 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  font-family: "Roboto";
+  font-size: 1.2em;
+}
+
+#buttons {
+  height: fit-content;
+  display: flex;
+  height:clamp(15px,20px,30px);
+  min-width: 300px;
+}
+
+.but {
+  background-color: blue;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  margin: 0.1em;
+  padding: 0.2em;
+  width:clamp(100px,120px,300px);
+  min-width:90px;
+}
+
+.but:hover {
+  background-color: red;
+  cursor:pointer;
+}
+
+.display {
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  height:90%;
+}
+
+#storage.storageUnit {
+  width:30%;
+  width:clamp(100px,33%,300px);
+  min-width:150px;
+}
+
+table {
+  flex-shrink: 0;
+  border-spacing: 0px;
+  width:100%;
+  border: 1.5px solid black;
+}
+
+th {
+  border: 1px solid black;
+}
+
+.unit {
+  text-align:center;
+  font-weight: bold;
+  border: 2px solid black;
+  border-bottom: none;
+  min-width:128px;
+}
+
+td {
+  text-align:center;
+  border: 1px solid black;
+  padding:0px;
+}
+
+th {
+  font-weight: 100;
+  font-style:italic;
+  background-color: lightgray;
+}
+
+#food.display {
+  background-color: bisque;
+  display:flex;
+  flex-direction: column;
+}
+
+#food .storageUnit {
+  background-color: rgb(178, 252, 252);
+}
+
+.division {
+  display: flex;
+  justify-content: space-around;
+  height:100%;
+}
+
+#addFood {
+  background-color: blueviolet ;
+  height:2em;
+  max-height:4%;
+  min-width:400px;
+  display:flex;
+  justify-content: space-between;
+  position:fixed;
+  bottom:0px;
+}
+
+#greenBut {
+  cursor:pointer;
+}
