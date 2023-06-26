@@ -65,17 +65,17 @@ def reduceStrTime(s):
 
 parisTime = datetime.datetime.now(timezone("Europe/Paris"))
 
-myCoord = lat, lon = 50.52503389984545, 3.176484126375738
+myCoord = lat, lon = 43.143073, 5.994407
 nDep = 59
 delay = 1  # en jours !
 delay = dateToDays(datetime.datetime.now(timezone("Europe/Paris")))-dateToDays(
     datetime.date.today())  # hours passed since today, converted in days of course
 
 df = pandas.read_csv(
-    'prix-des-carburants-en-france-flux-instantane-v2.csv')
+    os.getcwd()+'/prix-des-carburants-en-france-flux-instantane-v2.csv',sep=";")
 cols = list(df.columns)
 print(*cols, sep="\n")  # noice format m8
-myFuel = "e10"
+myFuel = "gazole"
 myCols = ['id',
           'latitude',
           'longitude',
